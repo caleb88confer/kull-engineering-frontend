@@ -10,6 +10,7 @@ import './App.css';
 
 function App() {
   const [location, setLocation] = useState(0)
+  const [contactSubject, setContactSubject] = useState('Dont Know What I Need')
 
   return (
     <div className="App">
@@ -17,6 +18,8 @@ function App() {
       setLocation={setLocation}
       />
       <Main
+      contactSubject={contactSubject}
+      setContactSubject={setContactSubject}
       setLocation={setLocation} 
       location={location}
       />

@@ -1,73 +1,87 @@
 import {Link} from "react-router-dom";
+import {useState, useEffect} from 'react';
+
+function Header ({location, setLocation, contactSubject, setContactSubject}) {
 
 
-function Header ({location, setLocation}) {
     const headerData = [
         {
             "location": "home",
             "img": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
             "tag": "This is the home page",
-            "contact": false
+            "contact": false,
+            "subject": "Home"
         },
         {
             "location": "studio",
             "img": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
             "tag": "This is the studio page",
-            "contact": true
+            "contact": true,
+            "subject": "Studio"
         },
         {
             "location": "acoustics",
             "img": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
             "tag": "This is the acoustics page",
-            "contact": true
+            "contact": true,
+            "subject": "Acoustics"
         },
         {
             "location": "live",
             "img": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
             "tag": "This is the live page",
-            "contact": true
+            "contact": true,
+            "subject": "Live"
         },
         {
             "location": "about",
             "img": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
             "tag": "This is the about page",
-            "contact": false
+            "contact": false,
+            "subject": "About"
+
         },
         {
             "location": "contact",
             "img": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
             "tag": "This is the contact page",
-            "contact": false
+            "contact": false,
+            "subject": "Contact"
         },
         {
             "location": "recording",
             "img": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
             "tag": "This is the recording page",
-            "contact": true
+            "contact": true,
+            "subject": "Recording"
         },
         {
             "location": "mixing",
             "img": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
             "tag": "This is the mixing page",
-            "contact": true
+            "contact": true,
+            "subject": "Mixing"
         },
         {
             "location": "mastering",
             "img": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
             "tag": "This is the mastering page",
-            "contact": true
+            "contact": true,
+            "subject": "Mastering"
         },
         {
             "location": "production",
             "img": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
             "tag": "This is the production page",
-            "contact": true
+            "contact": true,
+            "subject": "Production"
         },
         {
             "location": "dkwyn",
             "img": "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
             "tag": "dont know what you need?",
-            "contact": true
+            "contact": true,
+            "subject": "Dont Know What I Need"
         }
     ]
     
@@ -82,7 +96,9 @@ function Header ({location, setLocation}) {
                 {headerData[location].tag}
             </p>
             <Link
+            className="contact-button"
             onClick={() => setLocation(5)}
+            onClick={() => setContactSubject(headerData[location].subject)}
             to='/contact'
             >
             Contact

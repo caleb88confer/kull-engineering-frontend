@@ -1,7 +1,12 @@
 import {Link} from "react-router-dom";
+import {useEffect} from "react";
 
 
 function Services ({setLocation}) {
+
+    useEffect(() => {
+        setLocation(0);
+    })
     return(
         <div className="services-tab">
 
