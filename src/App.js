@@ -16,7 +16,8 @@ function App() {
       <Nav 
       setLocation={setLocation}
       />
-      <Main 
+      <Main
+      setLocation={setLocation} 
       location={location}
       />
       <Footer />

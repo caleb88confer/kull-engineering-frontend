@@ -15,21 +15,21 @@ function Nav ({setLocation}) {
     <Link 
     className="nav-link"
     onClick={() => setLocation(1)}
-    to='/'>
+    to='/studio'>
         Studio
     </Link>
 
     <Link 
     className="nav-link"
     onClick={() => setLocation(2)}
-    to='/'>
+    to='/acoustics'>
         Acoustics
     </Link>
 
     <Link
     className="nav-link" 
     onClick={() => setLocation(3)}
-    to='/'>
+    to='/live'>
         Live
     </Link>
 
@@ -38,14 +38,14 @@ function Nav ({setLocation}) {
     <Link 
     className="nav-link"
     onClick={() => setLocation(4)}
-    to='/'>
+    to='/about'>
         About
     </Link>
 
     <Link
     className="nav-link" 
     onClick={() => setLocation(5)}
-    to='/'>
+    to='/contact'>
         Contact
     </Link>
 
