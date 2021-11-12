@@ -16,6 +16,7 @@ function App() {
     <div className="App">
       <Nav 
       setLocation={setLocation}
+      location ={location}
       />
       <Main
       contactSubject={contactSubject}

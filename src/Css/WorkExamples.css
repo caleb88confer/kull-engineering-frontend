@@ -1,0 +1,57 @@
+:root {
+    --main-color: rgb(69, 69, 69);
+    --secondary-color: rgb(92, 130, 160);
+    --accent-color: orange;
+}
+
+.work-examples-tab {
+    background-color: rgba(92, 130, 160, 0.345);
+    height: 700px;
+}
+
+.spotify-tab {
+    /* border: 1px solid lime; */
+    display: flex;
+    height: 50%;
+    padding: 50px 0;
+}
+
+.youtube-tab {
+    /* border: 1px solid red; */
+    display: flex;
+    height: 50%;
+    padding: 50px 0;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.info-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 1px solid black; */
+    width: 50%;
+}
+
+.info-title {
+    font-size: 3rem;
+    color: rgb(62, 88, 108);
+}
+
+.info-description {
+    /* border: 1px solid violet; */
+    width: 75%;
+    color: rgb(42, 41, 41);
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.embedded-tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid black; */
+    width: 50%;
+}
+
+

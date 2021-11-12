@@ -1,0 +1,62 @@
+:root {
+    --main-color: rgb(69, 69, 69);
+    --secondary-color: rgb(92, 130, 160);
+    --accent-color: orange;
+}
+
+.studio-services-tab {
+    /* border: 1px solid black; */
+    display: flex;
+    flex-direction: column;
+    background-color: beige;
+}
+
+h3 {
+    text-decoration: underline;
+    color: var(--main-color);
+}
+
+.buttons-tab {
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    height: 300px;
+    align-items: center;
+}
+
+.studio-service-button {
+    text-decoration: none;
+    font-size: 1.9rem;
+    color: var(--secondary-color);
+    font-weight: bold;
+    /* transition: 300ms; */
+}
+
+.studio-service-button:hover {
+    color: white;
+}
+
+.dkwyn {
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid var(--main-color);
+    text-decoration: none;
+    height: 50px;
+    border-radius: 16px;
+    padding: 10px;
+    transition: 300ms;
+
+}
+
+.button:hover {
+    background-color: var(--secondary-color);
+}
+

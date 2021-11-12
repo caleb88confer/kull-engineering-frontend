@@ -1,6 +1,9 @@
 import {Link} from "react-router-dom";
 import {useEffect} from "react";
 
+import '../Css/Services.css';
+
+
 
 function Services ({setLocation}) {
 
@@ -10,42 +13,69 @@ function Services ({setLocation}) {
     return(
         <div className="services-tab">
 
-            <div className="studio-service">
-                <h3>Studio</h3>
-                <Link 
-                onClick={() => setLocation(1)}
-                to="/studio">
-                    <img className="service-img" src="https://images.unsplash.com/photo-1517816428104-797678c7cf0c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" alt="" />
-                </Link>
+            <div className="service">
+
+                <h3 className="service-title">Studio</h3>
+
+                <div className="img">
+                    <Link 
+                    onClick={() => setLocation(1)}
+                    to="/studio">
+                        <div className="studio-img">
+
+                        </div>
+                        
+                      
+
+                    </Link>
+                </div>
+
                 <div className="service-description">
                     Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, numquam. Ut laborum voluptate illo molestias.
                 </div>
-            </div>
 
-            <div className="acoustic-service">
-                <h3>Acoustics</h3>
-                <Link 
-                onClick={() => setLocation(2)}
-                to="/acoustics">
-                    <img className="service-img" src="https://images.unsplash.com/photo-1517816428104-797678c7cf0c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" alt="" />
-                </Link>
-                <div className="service-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eaque molestias ullam veritatis non.   
-                </div>               
             </div>
+            <div className="service">
+                
+                <h3 className="service-title">Acoustics</h3>
 
-            <div className="live-service">
-                <h3>Live Sound</h3>
-                <Link
-                to="/live"
-                onClick={()=> setLocation(3)}
-                >
-                <img className="service-img" src="https://images.unsplash.com/photo-1517816428104-797678c7cf0c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" alt="" />
-                </Link>
-                <div className="service-description">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Enim, mollitia iure? Nesciunt, quos veritatis sint assumenda.
+                <div className="img">
+                    <Link 
+                    onClick={() => setLocation(2)}
+                    to="/acoustics">
+                        <div className="acoustics-img">
+
+                        </div>
+                        {/* <img className="service-img" src="https://images.unsplash.com/photo-1617994452722-4145e196248b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" alt="" /> */}
+                    </Link>
                 </div>
+                <div className="service-description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, numquam. Ut laborum voluptate illo molestias.
+                </div>
+
             </div>
+            <div className="service">
+            
+                <h3 className="service-title">Live Sound</h3>
+
+                <div className="img">
+                    <Link
+                    to="/live"
+                    onClick={()=> setLocation(3)}
+                    >
+                        <div className="live-img">
+
+                        </div>
+                    
+                    </Link>
+                </div>
+
+                <div className="service-description">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, numquam. Ut laborum voluptate illo molestias.
+                </div>
+
+            </div>
+
             
         </div>
     );
