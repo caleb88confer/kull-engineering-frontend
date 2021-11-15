@@ -56,7 +56,7 @@ function Services ({setLocation}) {
             </div>
             <div className="service">
             
-                <h3 className="service-title">Live Sound</h3>
+                <h3 className="service-title">Live</h3>
 
                 <div className="img">
                     <Link

@@ -1,18 +1,21 @@
 :root {
-    --main-color: rgb(69, 69, 69);
-    --secondary-color: rgb(92, 130, 160);
-    --accent-color: orange;
+    --main-color: #121212;
+    --secondary-color: #74c5ce;
+    --accent-color: #e6b760;
+    --font-color: rgb(255, 255, 255);
 }
 
 .social-tab {
-    background-color: rgba(92, 130, 160, 0.345);
+    background-color: #152e45;
     display: flex;
     flex-direction: column;
 }
 
 h2 {
     text-align: center;
-    color: var(--secondary-color);
+    color: var(--font-color);
+    font-family: 'Fira Mono', monospace;
+
 }
 
 .all-social-icons {
@@ -39,5 +42,5 @@ h2 {
 
 .social-img:hover {
     opacity: 0.6;
-box-shadow: 5px 5px 25px 5px rgb(109, 109, 109);
+box-shadow: 5px 5px 25px 5px rgb(255, 255, 255);
 }

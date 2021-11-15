@@ -1,13 +1,17 @@
 :root {
-    --main-color: rgb(69, 69, 69);
-    --secondary-color: rgb(92, 130, 160);
-    --accent-color: orange;
+    --main-color: #121212;
+    --secondary-color: #74c5ce;
+    --accent-color: #e6b760;
+    --font-color: rgb(255, 255, 255);
 }
 
 .services-tab {
+    position: relative;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    background-color: var(--main-color);
+    z-index: 6;
 }
 
 .service {
@@ -20,11 +24,15 @@ h3 {
     font-size: 1.9rem;
     margin-top: 2rem;
     text-align: center;
-    color: var(--main-color);
+    color: var(--font-color);
 }
 
 .service-title {
     text-decoration: none;
+    color: var(--font-color);
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 2rem;
+
 }
 
 .img {
@@ -90,7 +98,8 @@ h3 {
     padding-top: 0rem;
     text-align: center;
     font-size: 1.2rem;
-    color: var(--main-color);
+    color: whitesmoke;
+    font-family: 'Fira Mono', monospace;
     
 
 }

@@ -8,6 +8,7 @@ import '../Css/Nav.css';
 
 function Nav ({setLocation, location}) {
   const [menuToggle, setMenuToggle] = useState(false)
+  const [smallScreenLinks, setSmallScreenLinks] = useState('small-screen-on')
   const [selectedLink, setSelectedLink] = useState({
       home: '',
       studio: '',
@@ -171,9 +172,11 @@ function Nav ({setLocation, location}) {
 
     function handleMenuToggle () {
         if (menuToggle) {
-            setMenuToggle(false)
+            setMenuToggle(false);
+            setSmallScreenLinks('small-screen-on');
         } else {
-            setMenuToggle('menu-toggle-on')
+            setMenuToggle('menu-toggle-on');
+            setSmallScreenLinks(false);
         }
     }
 
@@ -195,6 +198,9 @@ function Nav ({setLocation, location}) {
     onClick={() => handleMenuToggle()} 
     className="nav-menu"
     />
+    
+
+        
 
 </div>
     <div className="space">
@@ -204,7 +210,7 @@ function Nav ({setLocation, location}) {
 
 <div className='links'>
     <Link 
-    className={`nav-link ${selectedLink.studio}`}
+    className={`nav-link ${selectedLink.studio} ${smallScreenLinks}`}
     onClick={() => setLocation(1)}
     to='/studio'>
         <p>
@@ -214,7 +220,7 @@ function Nav ({setLocation, location}) {
     </Link>
 
     <Link 
-    className={`nav-link ${selectedLink.acoustics}`}
+    className={`nav-link ${selectedLink.acoustics} ${smallScreenLinks}`}
     onClick={() => setLocation(2)}
     to='/acoustics'>
         <p>
@@ -224,7 +230,7 @@ function Nav ({setLocation, location}) {
     </Link>
 
     <Link
-    className={`nav-link ${selectedLink.live}`} 
+    className={`nav-link ${selectedLink.live} ${smallScreenLinks}`} 
     onClick={() => setLocation(3)}
     to='/live'>
         <p>
@@ -234,7 +240,7 @@ function Nav ({setLocation, location}) {
     </Link>
 
     <Link 
-    className={`nav-link ${selectedLink.about}`}
+    className={`nav-link ${selectedLink.about} ${smallScreenLinks}`}
     onClick={() => setLocation(4)}
     to='/about'>
         <p>
@@ -244,7 +250,7 @@ function Nav ({setLocation, location}) {
     </Link>
 
     <Link
-    className={`nav-link ${selectedLink.contact}`} 
+    className={`nav-link ${selectedLink.contact} ${smallScreenLinks}`} 
     onClick={() => setLocation(5)}
     to='/contact'>
         <p>
@@ -252,9 +258,19 @@ function Nav ({setLocation, location}) {
 
         </p>
     </Link>
+
     
 </div>
+
+  
     
+</nav>
+
+        </>
+    );
+}
+
+export default Nav;
 
     
 
@@ -270,10 +286,3 @@ function Nav ({setLocation, location}) {
     
 
     
-
-</nav>
-        </>
-    );
-}
-
-export default Nav;

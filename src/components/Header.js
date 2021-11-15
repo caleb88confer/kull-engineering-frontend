@@ -5,9 +5,11 @@ function Header ({location, setLocation, contactSubject, setContactSubject}) {
 
 
     const headerData = [
-        {
+        { 
+            // https://images.unsplash.com/photo-1569761316261-9a8696fa2ca3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80
+
             "location": "home",
-            "img": "https://images.unsplash.com/photo-1569761316261-9a8696fa2ca3?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
+            "img": "https://images.unsplash.com/photo-1616528279874-b3d3b50ab6c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80",
             'title': 'Hello!',
             "tag": "This is the home page",
             "contact": false,
@@ -91,7 +93,7 @@ function Header ({location, setLocation, contactSubject, setContactSubject}) {
         return (
             <div className="header-tab">
             <img 
-            className="header-img"
+            className={`header-img ${headerData[location].location}`}
             src={headerData[location].img} alt="header" />
             <p className="header-title">
                 {headerData[location].title}
@@ -116,8 +118,9 @@ function Header ({location, setLocation, contactSubject, setContactSubject}) {
     }    
     return (
         <div className="header-tab">
+
             <img 
-            className="header-img"
+            className={`header-img ${headerData[location].location}`}
             src={headerData[location].img} alt="header image" />
             <p className="header-title">
                 {headerData[location].title}
