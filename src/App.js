@@ -24,7 +24,8 @@ function App() {
       setLocation={setLocation} 
       location={location}
       />
-      <Footer />
+      <Footer 
+      />
     </div>
   );
 }
