@@ -186,7 +186,6 @@ function Nav ({setLocation, location}) {
 <div className="nav-main">
     <Link 
     className={`nav-link ${selectedLink.home}`}
-    onClick={() => setLocation(0)}
     to='/'>
         <p id="home-link">
             KULL

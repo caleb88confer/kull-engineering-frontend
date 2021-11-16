@@ -9,71 +9,72 @@ function Services ({setLocation}) {
 
     useEffect(() => {
         setLocation(0);
+        window.scrollTo(0, 0)
     })
     return(
         <div className="services-tab">
 
             <div className="service">
+                    <Link 
+                    className="service-link"
+                    to="/studio">
 
                 <h3 className="service-title">Studio</h3>
 
                 <div className="img">
-                    <Link 
-                    onClick={() => setLocation(1)}
-                    to="/studio">
                         <div className="studio-img">
 
                         </div>
                         
                       
 
-                    </Link>
                 </div>
-
                 <div className="service-description">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, numquam. Ut laborum voluptate illo molestias.
+                click me If you need your song or podcast recorded, mixed, and or mastered. 
                 </div>
+                    </Link>
+
 
             </div>
             <div className="service">
+                    <Link 
+                    className="service-link"
+                    to="/acoustics">
                 
                 <h3 className="service-title">Acoustics</h3>
 
                 <div className="img">
-                    <Link 
-                    onClick={() => setLocation(2)}
-                    to="/acoustics">
                         <div className="acoustics-img">
 
                         </div>
                         {/* <img className="service-img" src="https://images.unsplash.com/photo-1617994452722-4145e196248b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" alt="" /> */}
-                    </Link>
                 </div>
                 <div className="service-description">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, numquam. Ut laborum voluptate illo molestias.
+                click me if you want your own home/commercial studio or theater. 
                 </div>
 
+                    </Link>
             </div>
             <div className="service">
+                    <Link
+                    className="service-link"
+                    to="/live"
+                    >
             
                 <h3 className="service-title">Live</h3>
 
                 <div className="img">
-                    <Link
-                    to="/live"
-                    onClick={()=> setLocation(3)}
-                    >
                         <div className="live-img">
 
                         </div>
                     
-                    </Link>
                 </div>
 
                 <div className="service-description">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odit, numquam. Ut laborum voluptate illo molestias.
+                click me if you want a live sound engineer or want to rent live sound equipment. 
                 </div>
 
+                    </Link>
             </div>
 
             

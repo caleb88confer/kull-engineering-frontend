@@ -5,6 +5,7 @@ import ContactForm from '../components/ContactForm';
 function Contact ({setLocation, contactSubject}) {
     useEffect(() => {
         setLocation(5);
+        window.scrollTo(0, 0)
     })
     if (contactSubject === "Dont Know What I Need") {
         return(

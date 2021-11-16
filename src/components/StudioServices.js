@@ -8,6 +8,7 @@ function StudioServices ({setLocation}) {
 
     useEffect(() => {
         setLocation(1);
+        window.scrollTo(0, 0)
     })
     return(
         <div className="studio-services-tab">

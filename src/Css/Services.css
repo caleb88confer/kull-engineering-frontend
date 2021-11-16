@@ -11,13 +11,16 @@
     flex-wrap: wrap;
     justify-content: space-evenly;
     background-color: var(--main-color);
-    z-index: 6;
+    /* z-index: -1; */
 }
 
 .service {
+    position: relative;
     width: 200px;
     margin: 0 2rem;
     margin-top: 3rem;
+    /* z-index: 7; */
+    /* border: 1px solid red; */
 }
 
 h3 {
@@ -52,12 +55,6 @@ h3 {
     transition: 250ms;
 }
 
-.studio-img:hover {
-    height: 160px;
-    width: 160px;
-    background-image: url('https://images.unsplash.com/photo-1528900919889-64ee845fcb80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80');
-}
-
 .acoustics-img {
     height: 150px;
     width: 150px;
@@ -67,11 +64,6 @@ h3 {
     transition: 250ms;
 }
 
-.acoustics-img:hover {
-    height: 160px;
-    width: 160px;
-    background-image: url('https://images.unsplash.com/photo-1617994452722-4145e196248b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80');
-}
 
 
 .live-img {
@@ -83,11 +75,31 @@ h3 {
     transition: 250ms;
 }
 
-.live-img:hover {
+.service:hover .studio-img {
+    height: 160px;
+    width: 160px;
+    background-image: url('https://images.unsplash.com/photo-1528900919889-64ee845fcb80?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80');
+}
+
+.service:hover .acoustics-img {
+    height: 160px;
+    width: 160px;
+    background-image: url('https://images.unsplash.com/photo-1617994452722-4145e196248b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80');
+}
+
+.service:hover .live-img {
     height: 160px;
     width: 160px;
     background-image: url('https://images.unsplash.com/photo-1541592553160-82008b127ccb?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80');
 }
+
+.service-link {
+    text-decoration: none;
+}
+
+
+
+
 
 
 
@@ -100,6 +112,7 @@ h3 {
     font-size: 1.2rem;
     color: whitesmoke;
     font-family: 'Fira Mono', monospace;
+    
     
 
 }

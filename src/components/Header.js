@@ -1,7 +1,10 @@
-import {Link} from "react-router-dom";
-import {useState, useEffect} from 'react';
 
-function Header ({location, setLocation, contactSubject, setContactSubject}) {
+
+import {Link} from "react-router-dom";
+
+import '../Css/Header.css';
+
+function Header ({location, setContactSubject}) {
 
 
     const headerData = [
@@ -10,29 +13,30 @@ function Header ({location, setLocation, contactSubject, setContactSubject}) {
 
             "location": "home",
             "img": "https://images.unsplash.com/photo-1616528279874-b3d3b50ab6c7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1771&q=80",
-            'title': 'Hello!',
-            "tag": "This is the home page",
+            'title': "People aren't perfect.",
+            "tag": "But sound is! Let's bridge the gap.",
             "contact": false,
             "subject": "Home"
         },
         {
             "location": "studio",
             "img": "https://images.unsplash.com/photo-1612408885627-efe742ec2d2a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
-            "tag": "This is the studio page",
+            "title": "whether you come to the studio or we come to you",
+            "tag": "this is your one stop shop for getting your song/podcast onto every streaming platform",
             "contact": true,
             "subject": "Studio"
         },
         {
             "location": "acoustics",
             "img": "https://images.unsplash.com/photo-1515462277126-2dd0c162007a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=688&q=80",
-            "tag": "This is the acoustics page",
+            "tag": "for your own studio, This process is entirely up to your budget. Whether you need customer built walls and fully sourced equipment or just need help positioning your speakers, we can provide a quality set up for you to begin making your own high quality music. For a theater, we can provide the best entertainment acoustics for your rooms set up whether that be a venue or a basement.",
             "contact": true,
             "subject": "Acoustics"
         },
         {
             "location": "live",
             "img": "https://images.unsplash.com/photo-1603815878781-536e057a3e7c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
-            "tag": "This is the live page",
+            "tag": "whether you need a live sound engineer or want to rent microphones and speakers for your next gig, we can provide quality sound for your fans to hear.",
             "contact": true,
             "subject": "Live"
         },
@@ -93,18 +97,17 @@ function Header ({location, setLocation, contactSubject, setContactSubject}) {
         return (
             <div className="header-tab">
             <img 
-            className={`header-img ${headerData[location].location}`}
+            className={`header-img ${headerData[location].location}-img`}
             src={headerData[location].img} alt="header" />
-            <p className="header-title">
+            <p className={`${headerData[location].location}-title header-title-generic`}>
                 {headerData[location].title}
             </p>
-            <p className='header-tag'>
+            <p className={`${headerData[location].location}-tag header-tag-generic`}>
                 {headerData[location].tag}
             </p>
             <div className="contact-box">
             <Link
             className="contact-button"
-            onClick={() => setLocation(5)}
             onClick={() => setContactSubject(headerData[location].subject)}
             to='/contact'
             >
@@ -120,12 +123,12 @@ function Header ({location, setLocation, contactSubject, setContactSubject}) {
         <div className="header-tab">
 
             <img 
-            className={`header-img ${headerData[location].location}`}
-            src={headerData[location].img} alt="header image" />
-            <p className="header-title">
+            className={`header-img ${headerData[location].location}-img`}
+            src={headerData[location].img} alt="header" />
+            <p className={`${headerData[location].location}-title header-title-generic`}>
                 {headerData[location].title}
             </p>
-            <p className='header-tag'>
+            <p className={`${headerData[location].location}-tag header-tag-generic`}>
                 {headerData[location].tag}
             </p>
         </div>

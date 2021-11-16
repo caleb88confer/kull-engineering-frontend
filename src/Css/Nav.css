@@ -12,7 +12,7 @@ nav {
     padding-left: 1rem;
     padding-right: 1rem;
     background-color: var(--main-color);
-    z-index: 2;
+    z-index: 11;
     /* border: 1px solid lime; */
    
 
@@ -55,7 +55,7 @@ nav {
       left: 0px;
       top: 80px;
       /* border: 1px solid white; */
-      z-index: 3;
+      z-index: 11;
       /* box-shadow: inset -1px 3px 8px 5px #e6b76039, 2px 5px 16px 0px #0B325E, -15px 16px 3px 15px rgba(0,0,0,0); */
       background-color: #1212126d;
 
