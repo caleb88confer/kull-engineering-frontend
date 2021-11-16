@@ -209,19 +209,63 @@ function Nav ({setLocation, location}) {
 
 
 <div className='links'>
-    <Link 
-    className={`nav-link ${selectedLink.studio} ${smallScreenLinks}`}
-    onClick={() => setLocation(1)}
-    to='/studio'>
-        <p>
-        Studio
+    <div className="drop-down link">
+        <Link 
+        className={`nav-link ${selectedLink.studio} ${smallScreenLinks}`}
+        to='/studio'>
+            <p>
+            Studio
 
-        </p>
-    </Link>
+            </p>
+        </Link>
+            <div className="drop-down-content">
+                <Link 
+                className={`nav-link studio-link-sub ${selectedLink.recording} ${smallScreenLinks}`}
+                
+                to='/recording'>
+                    <p>
+                    Recording
 
+                    </p>
+                </Link>
+
+                <Link 
+                className={`nav-link studio-link-sub ${selectedLink.mixing} ${smallScreenLinks}`}
+                
+                to='/mixing'>
+                    <p>
+                    Mixing
+
+                    </p>
+                </Link>
+
+                <Link 
+                className={`nav-link studio-link-sub ${selectedLink.mastering} ${smallScreenLinks}`}
+                
+                to='/mastering'>
+                    <p>
+                    Mastering
+
+                    </p>
+                </Link>
+
+                <Link 
+                className={`nav-link studio-link-sub ${selectedLink.production} ${smallScreenLinks}`}
+                
+                to='/production'>
+                    <p>
+                    Production
+
+                    </p>
+                </Link>
+
+    </div>
+
+    </div>
+
+        <div className="link">
     <Link 
     className={`nav-link ${selectedLink.acoustics} ${smallScreenLinks}`}
-    onClick={() => setLocation(2)}
     to='/acoustics'>
         <p>
         Acoustics
@@ -229,9 +273,11 @@ function Nav ({setLocation, location}) {
         </p>
     </Link>
 
+        </div>
+
+        <div className="link">
     <Link
     className={`nav-link ${selectedLink.live} ${smallScreenLinks}`} 
-    onClick={() => setLocation(3)}
     to='/live'>
         <p>
         Live
@@ -239,9 +285,11 @@ function Nav ({setLocation, location}) {
         </p>
     </Link>
 
+        </div>
+
+        <div className="link">
     <Link 
     className={`nav-link ${selectedLink.about} ${smallScreenLinks}`}
-    onClick={() => setLocation(4)}
     to='/about'>
         <p>
         About
@@ -249,15 +297,19 @@ function Nav ({setLocation, location}) {
         </p>
     </Link>
 
+        </div>
+
+        <div className="link">
     <Link
     className={`nav-link ${selectedLink.contact} ${smallScreenLinks}`} 
-    onClick={() => setLocation(5)}
     to='/contact'>
         <p>
         Contact
 
         </p>
     </Link>
+
+        </div>
 
     
 </div>

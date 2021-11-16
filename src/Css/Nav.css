@@ -12,7 +12,8 @@ nav {
     padding-left: 1rem;
     padding-right: 1rem;
     background-color: var(--main-color);
-    z-index: -6;
+    z-index: 2;
+    /* border: 1px solid lime; */
    
 
 }
@@ -23,6 +24,7 @@ nav {
     justify-content: center;
     align-items: center;
     align-items: center;
+    /* border: 1px solid white; */
 }
 
 .nav-link {
@@ -32,6 +34,39 @@ nav {
     font-weight: bold;
     transition: 300ms;
 }
+
+.link {
+    display: flex;
+    height: 100%;
+    /* border: 1px solid red; */
+
+}
+
+.drop-down {
+    position: relative;
+    /* border: 1px solid white; */
+    height: 100%;
+  }
+
+  .drop-down-content {
+      display: none;
+      position: absolute;
+      height: 45px;
+      left: 0px;
+      top: 80px;
+      /* border: 1px solid white; */
+      z-index: 3;
+      /* box-shadow: inset -1px 3px 8px 5px #e6b76039, 2px 5px 16px 0px #0B325E, -15px 16px 3px 15px rgba(0,0,0,0); */
+      background-color: #1212126d;
+
+  }
+
+  .drop-down:hover .drop-down-content {display: flex;}
+
+
+  .studio-link-sub {
+      font-size: .7rem;
+  }
 
 .nav-link:hover {
     /* color: #74a0ce; */
@@ -48,9 +83,11 @@ nav {
     display: flex;
     width: 100%;
     justify-content: flex-end;
+    align-items: center;
     transition: 900ms;
     font-family: 'Rubik Mono One', sans-serif;
     font-size: 1rem;
+    /* border: 1px solid lime */
 
 
 }
@@ -129,13 +166,46 @@ nav {
     
     }
 
+
     .links {
+        position: relative;
         display: flex;
+        align-self: flex-start;
+        align-content: center;
         flex-direction: column;
-        width: 100%;
+        width: 25%;
+        margin-left: 15px;
         /* border: 1px solid yellow; */
     
     }
+
+    .link {
+        display: flex;
+        height: 45px;
+        /* border: 1px solid red; */
+    }
+
+    .drop-down {
+      position: relative;
+      /* border: 1px solid white; */
+    }
+
+    .drop-down-content {
+        display: none;
+        position: absolute;
+        height: 45px;
+        left: 120px;
+        top: 0px;
+        background-color: transparent;
+        /* border: 1px solid white; */
+
+    }
+
+    .studio-link-sub {
+        font-size: .7rem;
+    }
+
+    .drop-down:hover .drop-down-content {display: flex;}
 
     .small-screen-on {
         transition-delay: 500ms;
