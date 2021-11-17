@@ -21,21 +21,23 @@ function Header ({location, setContactSubject}) {
         {
             "location": "studio",
             "img": "https://images.unsplash.com/photo-1612408885627-efe742ec2d2a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
-            "title": "whether you come to the studio or we come to you",
-            "tag": "this is your one stop shop for getting your song/podcast onto every streaming platform",
+            "title": "Studio",
+            "tag": "whether you come to the studio or we come to you, this is your one stop shop for getting your song/podcast onto every streaming platform",
             "contact": true,
             "subject": "Studio"
         },
         {
             "location": "acoustics",
             "img": "https://images.unsplash.com/photo-1515462277126-2dd0c162007a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=688&q=80",
-            "tag": "for your own studio, This process is entirely up to your budget. Whether you need customer built walls and fully sourced equipment or just need help positioning your speakers, we can provide a quality set up for you to begin making your own high quality music. For a theater, we can provide the best entertainment acoustics for your rooms set up whether that be a venue or a basement.",
+            "title": "Acoustics",
+            "tag": "Whether you need custom-built walls and fully sourced equipment or help to position your speakers, we can help you to begin making high-quality music. For a theater, we can provide the best entertainment acoustics for your room, whether that be a venue or a basement",
             "contact": true,
             "subject": "Acoustics"
         },
         {
             "location": "live",
             "img": "https://images.unsplash.com/photo-1603815878781-536e057a3e7c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
+            "title": "Live",
             "tag": "whether you need a live sound engineer or want to rent microphones and speakers for your next gig, we can provide quality sound for your fans to hear.",
             "contact": true,
             "subject": "Live"
@@ -58,6 +60,7 @@ function Header ({location, setContactSubject}) {
         {
             "location": "recording",
             "img": "https://images.unsplash.com/photo-1590602846989-e99596d2a6ee?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
+            "title": "Recording",
             "tag": "This is the recording page",
             "contact": true,
             "subject": "Recording"
@@ -65,6 +68,7 @@ function Header ({location, setContactSubject}) {
         {
             "location": "mixing",
             "img": "https://images.unsplash.com/photo-1466428996289-fb355538da1b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
+            "title": "Mixing",
             "tag": "This is the mixing page",
             "contact": true,
             "subject": "Mixing"
@@ -72,6 +76,7 @@ function Header ({location, setContactSubject}) {
         {
             "location": "mastering",
             "img": "https://images.unsplash.com/photo-1565828751789-6de4e57775d1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+            "title": "Mastering",
             "tag": "This is the mastering page",
             "contact": true,
             "subject": "Mastering"
@@ -79,6 +84,7 @@ function Header ({location, setContactSubject}) {
         {
             "location": "production",
             "img": "https://images.unsplash.com/photo-1609557926604-e5e3844fdae0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
+            "title": "Production",
             "tag": "This is the production page",
             "contact": true,
             "subject": "Production"
@@ -86,6 +92,7 @@ function Header ({location, setContactSubject}) {
         {
             "location": "dkwyn",
             "img": "https://images.unsplash.com/photo-1618218168350-6e7c81151b64?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1074&q=80",
+            "title": "",
             "tag": "dont know what you need?",
             "contact": true,
             "subject": "Dont Know What I Need"
@@ -97,7 +104,7 @@ function Header ({location, setContactSubject}) {
         return (
             <div className="header-tab">
             <img 
-            className={`header-img ${headerData[location].location}-img`}
+            className={`header-img ${headerData[location].location}-header-img`}
             src={headerData[location].img} alt="header" />
             <p className={`${headerData[location].location}-title header-title-generic`}>
                 {headerData[location].title}
@@ -123,7 +130,7 @@ function Header ({location, setContactSubject}) {
         <div className="header-tab">
 
             <img 
-            className={`header-img ${headerData[location].location}-img`}
+            className={`header-img ${headerData[location].location}-header-img`}
             src={headerData[location].img} alt="header" />
             <p className={`${headerData[location].location}-title header-title-generic`}>
                 {headerData[location].title}

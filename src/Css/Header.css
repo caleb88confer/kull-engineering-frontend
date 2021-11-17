@@ -5,14 +5,28 @@
     --font-color: rgb(255, 255, 255);
 }
 
+/* ===============================generic header css==================================== */
+
+
+.header-tab {
+    /* display: flex;
+    flex-direction: column; */
+    background-color: var(--main-color);
+    position: relative;
+    width: 100%;
+    height: 400px;
+z-index: 10;
+
+}
+
 .header-title-generic {
     top: 3rem;
     left: 1rem;
     position: absolute;
     font-size: 5rem;
     font-weight: 900;
-    color: rgb(0, 0, 0);
-    text-shadow: 1px 1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px 0px 0 #ffffff, 0px 1px 0 #ffffff, -1px 0px 0 #ffffff, 0px -1px 0 #ffffff;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, -1px -1px 0 #000000, 1px 0px 0 #000000, 0px 1px 0 #000000, -1px 0px 0 #000000, 0px -1px 0 #000000;
     font-family: 'Josefin Sans', sans-serif;
 }
 
@@ -22,24 +36,301 @@
     position: absolute;
     font-size: 3rem;
     font-weight: 900;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     text-shadow: 1px 1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, -1px -1px 0 #000000, 1px 0px 0 #000000, 0px 1px 0 #000000, -1px 0px 0 #000000, 0px -1px 0 #000000;
 }
+
+.header-img {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+    }
+
+
+
+.contact-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    left: 3rem;
+    top: 20rem;
+    height: 50px;
+    width: 135px;
+    position: absolute;
+    font-size: 1.7rem;
+    border: 1px solid rgb(255, 255, 255);
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    background-color: #12121280;
+    transition: 100ms;
+    border-radius: 5px;
+}
+
+.contact-button:hover {
+    background-color: rgb(60, 89, 111);
+}
+
+    /* ============================== home header ============================================= */
 
 .home-title {
     top: 0rem;
     left: 1rem;
+    color: black;
+    text-shadow: 1px 1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px 0px 0 #ffffff, 0px 1px 0 #ffffff, -1px 0px 0 #ffffff, 0px -1px 0 #ffffff;
 }
 
 .home-tag {
     top: 8rem;
     left: 5rem;
+    color: black;
     font-family: 'Josefin Sans', sans-serif;
     text-shadow: 1px 1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px 0px 0 #ffffff, 0px 1px 0 #ffffff, -1px 0px 0 #ffffff, 0px -1px 0 #ffffff;
 }
 
-.home-img {
+.home-header-img {
     object-position: top;
     box-shadow: 0px 10px 38px 8px #efd5a6ae;
     opacity: .9;
+}
+
+    /* ============================== studio
+     header ============================================= */
+
+
+.studio-title {
+    top: 0rem;
+    left: 3rem;
+    text-shadow: none;
+}
+
+.studio-tag {
+    top: 10rem;
+    left: 3rem;
+    width: 65%;
+    color: white;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    padding: 10px;
+    text-shadow: none;
+    border-radius: 5px;
+    background-color: #12121280;
+}
+
+.studio-header-img {
+    /* object-position: top; */
+    box-shadow: 0px 10px 38px 8px rgb(176, 65, 69);
+    opacity: .8;
+    border-radius: 0;
+}
+
+    /* ============================== acoustics header ============================================= */
+
+
+.acoustics-title {
+    top: 0rem;
+    left: 3rem;
+    text-shadow: none;
+}
+
+.acoustics-tag {
+    top: 10rem;
+    left: 2rem;
+    width: 75%;
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: 10px;
+    text-shadow: none;
+    border-radius: 5px;
+    background-color: #12121280;
+}
+
+.acoustics-header-img {
+    /* object-position: top; */
+    box-shadow: 0px 10px 38px 8px rgba(255, 255, 255, 0.469);
+    opacity: 1;
+    border-radius: 0;
+}
+
+    /* ============================== live header ============================================= */
+
+    .live-title {
+        top: 0rem;
+        left: 3rem;
+        text-shadow: none;
+    }
+    
+    .live-tag {
+        top: 10rem;
+        left: 2rem;
+        width: 65%;
+        color: white;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        padding: 10px;
+        text-shadow: none;
+        border-radius: 5px;
+        background-color: #12121280;
+    }
+    
+    .live-header-img {
+        /* object-position: top; */
+        box-shadow: 0px 10px 38px 8px rgba(224, 71, 247, 0.736);
+        opacity: 1;
+        border-radius: 0;
+    }
+
+
+
+
+
+
+/* ================================ small screen css ====================================== */
+
+@media only screen and (max-width: 800px) {
+
+    .header-tab {
+        height: 475px;
+        /* border: 1px solid red; */
+    }
+
+    .header-title-generic {
+        font-size: 4.6rem;
+        text-align: center;
+        
+      
+    }
+    
+    .header-tag-generic {
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    .header-img {
+        height: 100%;
+        }
+
+    .home-title {
+        top: -1rem;
+        left: 0rem;
+        width: 100%;
+    }
+
+    .home-tag {
+        top: 12rem;
+        left: 0rem;
+        font-size: 2.7rem;
+        width: 100%;
+    }
+
+    .studio-title {
+        top: 0rem;
+        left: 3rem;
+        text-shadow: none;
+    }
+    
+    .studio-tag {
+        top: 10rem;
+        left: 3rem;
+        width: 65%;
+        font-size: 1.1rem;
+        
+    }
+    
+    .studio-header-img {
+        /* object-position: top; */
+        box-shadow: 0px 10px 38px 8px rgb(176, 65, 69);
+        opacity: .8;
+    }
+
+    .acoustics-title {
+        top: -1rem;
+    }
+    
+    .acoustics-tag {
+        top: 9rem;
+        left: 2rem;
+        width: 85%;
+    }
+
+    .live-tag {
+        top: 10rem;
+        left: 2rem;
+        width: 75%;
+        color: white;
+        font-size: 1.2rem;
+        line-height: 1.5;
+        padding: 10px;
+        text-shadow: none;
+        border-radius: 5px;
+        background-color: #12121280;
+    }
+
+    .contact-button {
+        left: 3rem;
+        top: 24rem;
+        height: 50px;
+    }
+
+}
+
+/* ===============================standard mobile css ================================================= */
+
+@media only screen and (max-width: 480px) {
+
+    .header-title-generic {
+        font-size: 4.9rem;
+      
+    }
+    
+    .header-tag-generic {
+        font-size: 1rem;
+    }
+
+    .home-title {
+        top: -2rem;
+        left: 0rem;
+        font-size: 3.4rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-tag {
+        top: 9rem;
+        left: 0rem;
+        font-size: 2.7rem;
+        width: 100%;
+    }
+
+}
+
+/* ===============================small mobile css ================================================= */
+
+@media only screen and (max-width: 400px) {
+
+    .header-title-generic {
+        font-size: 4.9rem;
+      
+    }
+    
+    .header-tag-generic {
+        font-size: 1rem;
+    }
+
+    .home-title {
+        top: -1rem;
+        left: 0rem;
+        font-size: 3.2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .home-tag {
+        top: 8rem;
+        left: 0rem;
+        font-size: 2.5rem;
+        width: 100%;
+    }
+    
 }

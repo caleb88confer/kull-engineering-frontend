@@ -168,6 +168,10 @@ function Nav ({setLocation, location}) {
         dkwyn: 'selected-link'
     })
   }, [location])
+
+  useEffect(() => {
+    setMenuToggle(false);
+  }, [location])
     
 
     function handleMenuToggle () {
@@ -185,7 +189,7 @@ function Nav ({setLocation, location}) {
             <nav className={menuToggle}>
 <div className="nav-main">
     <Link 
-    className={`nav-link ${selectedLink.home}`}
+    className={`nav-link home-link ${selectedLink.home}`}
     to='/'>
         <p id="home-link">
             KULL
@@ -257,6 +261,9 @@ function Nav ({setLocation, location}) {
 
                     </p>
                 </Link>
+                <div className="drop-down-space">
+
+                </div>
 
     </div>
 

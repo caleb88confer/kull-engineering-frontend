@@ -44,3 +44,39 @@ h2 {
     opacity: 0.6;
 box-shadow: 5px 5px 25px 5px rgb(255, 255, 255);
 }
+
+
+/* ========================small screen css========================== */
+
+@media only screen and (max-width: 800px) {
+
+}
+
+
+/* ===============================standard mobile css ================================================= */
+
+@media only screen and (max-width: 480px) {
+
+    .social-img {
+        height: 85px;
+        width: 85px;
+        border-radius: 25%;
+        object-fit: cover;
+        margin: 2rem 0;
+        margin-bottom: 4rem;
+        transition: 300ms;
+    
+    }
+
+    .social-img:hover {
+        opacity: 1;
+    box-shadow: none;
+    }
+
+}
+
+/* ===============================small mobile css ================================================= */
+
+@media only screen and (max-width: 400px) {
+
+}
