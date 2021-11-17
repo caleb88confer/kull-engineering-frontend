@@ -104,10 +104,6 @@ nav {
 
 }
 
-.nav-menu:hover {
-    color: var(--accent-color);
-
-}
 
 .selected-link {
     color: var(--accent-color);
@@ -198,6 +194,7 @@ nav {
         height: 45px;
         left: 130px;
         top: 0px;
+        z-index: 10;
         background-color: transparent;
 
     }
@@ -240,10 +237,26 @@ nav {
     }
     .nav-link {
         /* margin-left: 30px; */
+        text-shadow: none;
+
+    }
+
+    .nav-link:hover {
+        text-shadow: none;
+
     }
 
     .home-link {
         margin-left: 0px;   
+    }
+
+    .nav-menu {
+        color: var(--font-color);
+    
+    }
+
+    .nav-menu:active {
+        color: var(--accent-color);    
     }
 
     .links {
