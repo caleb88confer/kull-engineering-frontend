@@ -1,4 +1,4 @@
-
+import { Link } from "react-router-dom";
 
 function Footer (props) {
 
@@ -7,9 +7,21 @@ function Footer (props) {
             <p className="footer-text">copyright © 2021 James Kull Engineering</p>
 
 <div className="footer-links">
-    <a className="footer-link" href="/">HOME</a>
-    <a className="footer-link" href="/about">ABOUT</a>
-    <a className="footer-link" href="/contact">CONTACT</a>
+        <Link
+        className="footer-link"
+        to='/'>
+            <p>HOME</p>
+        </Link>
+        <Link
+        className="footer-link"
+        to='/about'>
+            <p>ABOUT</p>
+        </Link>
+        <Link
+        className="footer-link"
+        to='/contact'>
+            <p>CONTACT</p>
+        </Link>
 
 </div>
 
