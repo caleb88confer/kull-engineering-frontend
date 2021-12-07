@@ -11,11 +11,6 @@ import StudioExamples from "./StudioExamples";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
 import LiveLocation from "./LiveLocation";
-import RecordingLocation from '../location-setters/RecordingLocation';
-import MixingLocation from '../location-setters/MixingLocation';
-import MasteringLocation from '../location-setters/MasteringLocation';
-import ProductionLocation from '../location-setters/ProductionLocation';
-import DkwynLocation from '../location-setters/DkwynLocation';
 
 function Main ({location, setLocation, setContactSubject, contactSubject}) {
     return (
@@ -35,21 +30,21 @@ function Main ({location, setLocation, setContactSubject, contactSubject}) {
                 </Route>
 
                 <Route path="/studio">
-                    <StudioServices setLocation={setLocation} />
+                    <StudioServices 
+                    setLocation={setLocation} 
+                    setContactSubject={setContactSubject}
+                    />
                     <WorkExamples />
-                    <Pricing/>
                 </Route>
 
                 <Route path="/acoustics">
                     <ServiceDescription />
                     <StudioExamples setLocation={setLocation} />
-                    <Pricing />
                 </Route>
 
                 <Route path="/live">
                     <LiveLocation setLocation={setLocation} />
                     <ServiceDescription />
-                    <Pricing />
                 </Route>
 
                 <Route path="/about">
@@ -62,25 +57,7 @@ function Main ({location, setLocation, setContactSubject, contactSubject}) {
                     setLocation={setLocation}/>
                 </Route>
 
-                <Route path="/recording">
-                    <RecordingLocation setLocation={setLocation} />
-                </Route>
-
-                <Route path="/mixing">
-                    <MixingLocation setLocation={setLocation} />
-                </Route>
-
-                <Route path="/mastering">
-                    <MasteringLocation setLocation={setLocation} />
-                </Route>
-
-                <Route path="/production">
-                    <ProductionLocation setLocation={setLocation} />
-                </Route>
-
-                <Route path="/dkwyn">
-                    <DkwynLocation setLocation={setLocation} />
-                </Route>
+               
             </Switch>
         </main>
     );

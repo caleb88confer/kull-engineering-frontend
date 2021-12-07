@@ -5,8 +5,15 @@
     --font-color: rgb(255, 255, 255);
 }
 
+
 body {
     background-color: var(--main-color);
+    display: flex;
+    flex-direction: column;
+}
+
+.App {
+    
 }
 
 

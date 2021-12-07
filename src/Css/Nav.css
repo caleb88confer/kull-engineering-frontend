@@ -42,31 +42,6 @@ nav {
 
 }
 
-.drop-down {
-    position: relative;
-    /* border: 1px solid white; */
-    height: 100%;
-  }
-
-  .drop-down-content {
-      display: none;
-      position: absolute;
-      height: 45px;
-      left: 0px;
-      top: 80px;
-      /* border: 1px solid white; */
-      z-index: 11;
-      /* box-shadow: inset -1px 3px 8px 5px #e6b76039, 2px 5px 16px 0px #0B325E, -15px 16px 3px 15px rgba(0,0,0,0); */
-      background-color: #1212126d;
-
-  }
-
-  .drop-down:hover .drop-down-content {display: flex;}
-
-
-  .studio-link-sub {
-      font-size: .7rem;
-  }
 
 .nav-link:hover {
     /* color: #74a0ce; */
@@ -182,29 +157,6 @@ nav {
         
     }
 
-    .drop-down {
-      position: relative;
-    }
-
-    .drop-down-content {
-        display: none;
-        flex-direction: column;
-        /* justify-content: flex-end; */
-        position: absolute;
-        height: 45px;
-        left: 130px;
-        top: 0px;
-        z-index: 10;
-        background-color: transparent;
-
-    }
-
-    .studio-link-sub {
-        font-size: 1rem;
-        text-align: center;
-    }
-
-    .drop-down:hover .drop-down-content {display: flex;}
 
     .small-screen-on {
         transition-delay: 500ms;
@@ -277,40 +229,6 @@ nav {
         align-self: flex-start;
     }
 
-    .drop-down {
-      position: relative;
-      /* border: 1px solid white; */
-    }
-
-
-    .drop-down-content {
-        position: absolute;
-        margin-left: 45px;
-        display: flex;
-        justify-content: flex-start;
-        align-content: flex-start;
-        align-items: center;
-        flex-direction: column;
-        height: 14.5rem;
-        width: 135%;
-        z-index: 0;
-        /* border: 1px solid rgb(29, 48, 255); */
-
-    }
-
-    .drop-down-space {
-        display: flex;
-        height: 45px;
-        align-self: flex-end; 
-    }
-
-    .studio-link-sub {
-        font-size: 1rem;
-        display: flex;
-        height: 45px;
-        /* border: 1px solid red; */
-        align-self: flex-end;
-    }
 
 
 
@@ -327,18 +245,6 @@ nav {
     }
 
 
-    .drop-down-content {
-        margin-left: 15px; 
-    }
-
-
-    .studio-link-sub {
-        font-size: .9rem;
-        display: flex;
-        height: 45px;
-        /* border: 1px solid red; */
-        align-self: flex-end;
-    }
 
 
     

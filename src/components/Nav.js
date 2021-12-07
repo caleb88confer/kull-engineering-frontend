@@ -6,7 +6,7 @@ import { useState, useEffect } from "react";
 
 import '../Css/Nav.css';
 
-function Nav ({setLocation, location}) {
+function Nav ({location}) {
   const [menuToggle, setMenuToggle] = useState(false)
   const [smallScreenLinks, setSmallScreenLinks] = useState('small-screen-on')
   const [selectedLink, setSelectedLink] = useState({
@@ -212,7 +212,8 @@ function Nav ({setLocation, location}) {
 
 
 <div className='links'>
-    <div className="drop-down link">
+   
+    <div className="link">
         <Link 
         className={`nav-link ${selectedLink.studio} ${smallScreenLinks}`}
         to='/studio'>
@@ -221,101 +222,58 @@ function Nav ({setLocation, location}) {
 
             </p>
         </Link>
-            <div className="drop-down-content">
-                <Link 
-                className={`nav-link studio-link-sub ${selectedLink.recording} ${smallScreenLinks}`}
-                
-                to='/recording'>
-                    <p>
-                    Recording
+    </div>
+            
 
-                    </p>
-                </Link>
+ 
 
-                <Link 
-                className={`nav-link studio-link-sub ${selectedLink.mixing} ${smallScreenLinks}`}
-                
-                to='/mixing'>
-                    <p>
-                    Mixing
+    <div className="link">
+        <Link 
+        className={`nav-link ${selectedLink.acoustics} ${smallScreenLinks}`}
+        to='/acoustics'>
+            <p>
+            Acoustics
 
-                    </p>
-                </Link>
-
-                <Link 
-                className={`nav-link studio-link-sub ${selectedLink.mastering} ${smallScreenLinks}`}
-                
-                to='/mastering'>
-                    <p>
-                    Mastering
-
-                    </p>
-                </Link>
-
-                <Link 
-                className={`nav-link studio-link-sub ${selectedLink.production} ${smallScreenLinks}`}
-                
-                to='/production'>
-                    <p>
-                    Production
-
-                    </p>
-                </Link>
-                <div className="drop-down-space">
-
-                </div>
+            </p>
+        </Link>
 
     </div>
 
+    <div className="link">
+        <Link
+        className={`nav-link ${selectedLink.live} ${smallScreenLinks}`} 
+        to='/live'>
+            <p>
+            Live
+
+            </p>
+        </Link>
+
     </div>
 
-        <div className="link">
-    <Link 
-    className={`nav-link ${selectedLink.acoustics} ${smallScreenLinks}`}
-    to='/acoustics'>
-        <p>
-        Acoustics
+    <div className="link">
+        <Link 
+        className={`nav-link ${selectedLink.about} ${smallScreenLinks}`}
+        to='/about'>
+            <p>
+            About
 
-        </p>
-    </Link>
+            </p>
+        </Link>
 
-        </div>
+    </div>
 
-        <div className="link">
-    <Link
-    className={`nav-link ${selectedLink.live} ${smallScreenLinks}`} 
-    to='/live'>
-        <p>
-        Live
+    <div className="link">
+        <Link
+        className={`nav-link ${selectedLink.contact} ${smallScreenLinks}`} 
+        to='/contact'>
+            <p>
+            Contact
 
-        </p>
-    </Link>
+            </p>
+        </Link>
 
-        </div>
-
-        <div className="link">
-    <Link 
-    className={`nav-link ${selectedLink.about} ${smallScreenLinks}`}
-    to='/about'>
-        <p>
-        About
-
-        </p>
-    </Link>
-
-        </div>
-
-        <div className="link">
-    <Link
-    className={`nav-link ${selectedLink.contact} ${smallScreenLinks}`} 
-    to='/contact'>
-        <p>
-        Contact
-
-        </p>
-    </Link>
-
-        </div>
+    </div>
 
     
 </div>

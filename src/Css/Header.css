@@ -109,17 +109,16 @@ z-index: 10;
     left: 3rem;
     width: 65%;
     color: white;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     line-height: 1.5;
     padding: 10px;
     text-shadow: none;
-    border-radius: 5px;
-    background-color: #12121280;
 }
 
 .studio-header-img {
     /* object-position: top; */
-    box-shadow: 0px 10px 38px 8px rgb(176, 65, 69);
+    box-shadow: 0px 10px 38px 8px rgb(175, 83, 52);
+
     opacity: .8;
     border-radius: 0;
 }
@@ -138,16 +137,13 @@ z-index: 10;
     left: 2rem;
     width: 75%;
     color: white;
-    font-size: 1rem;
+    font-size: 1.4rem;
     line-height: 1.5;
     padding: 10px;
     text-shadow: none;
-    border-radius: 5px;
-    background-color: #12121280;
 }
 
 .acoustics-header-img {
-    /* object-position: top; */
     box-shadow: 0px 10px 38px 8px rgba(255, 255, 255, 0.469);
     opacity: 1;
     border-radius: 0;
@@ -166,16 +162,13 @@ z-index: 10;
         left: 2rem;
         width: 65%;
         color: white;
-        font-size: 1.2rem;
+        font-size: 1.4rem;
         line-height: 1.5;
         padding: 10px;
         text-shadow: none;
-        border-radius: 5px;
-        background-color: #12121280;
     }
     
     .live-header-img {
-        /* object-position: top; */
         box-shadow: 0px 10px 38px 8px rgba(224, 71, 247, 0.736);
         opacity: 1;
         border-radius: 0;
@@ -240,7 +233,7 @@ z-index: 10;
     
     .studio-header-img {
         /* object-position: top; */
-        box-shadow: 0px 10px 38px 8px rgb(176, 65, 69);
+        box-shadow: 0px 10px 38px 8px rgb(175, 83, 52);
         opacity: .8;
     }
 

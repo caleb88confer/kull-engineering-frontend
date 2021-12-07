@@ -1,14 +1,87 @@
 :root {
-    --main-color: rgb(69, 69, 69);
-    --secondary-color: rgb(92, 130, 160);
-    --accent-color: orange;
+    --main-color: #121212;
+    --secondary-color: #74c5ce;
+    --accent-color: #e6b760;
+    --font-color: rgb(255, 255, 255);
 }
 
+
+
 .studio-services-tab {
-    /* border: 1px solid black; */
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: var(--main-color);
+    /* z-index: -1; */
+    /* border: 1px solid lime; */
+    
+}
+
+.studio-service {
+    display: flex;
+    position: relative;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin-top: 3rem;
+    border-bottom: 2px solid #636363;
+    
+}
+
+.studio-service-contact-link {
+    text-decoration: none;
+}
+
+.studio-service-left {
     display: flex;
     flex-direction: column;
-    background-color: beige;
+    justify-content: center;
+    width: 350px;
+    height: 300px;
+    border: 2px solid #636363;
+    padding: 1rem;
+    margin: 5rem;
+    border-radius: 5px;
+    transition: 300ms;
+
+}
+
+.studio-service-left:hover {
+    border: 2px solid rgb(175, 83, 52);
+    box-shadow: 0px 0px 20px 8px rgb(175, 83, 52);
+
+}
+.studio-service-right {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    /* border: 1px solid violet; */
+    margin: 2rem;
+}
+
+.studio-price-text {
+    text-decoration: none;
+    text-align: center;
+}
+
+.studio-service-description {
+    padding: 2rem 1rem;
+    padding-top: 0rem;
+    text-align: center;
+    font-size: 1.2rem;
+    color: whitesmoke;
+    font-family: 'Fira Mono', monospace;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.text {
+    text-align: left;
+    margin: 15px;
+    font-size: 1.3rem;
 }
 
 h3 {
@@ -16,47 +89,30 @@ h3 {
     color: var(--main-color);
 }
 
-.buttons-tab {
-    /* border: 1px solid red; */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    height: 300px;
-    align-items: center;
-}
-
-.studio-service-button {
+.studio-service-title {
     text-decoration: none;
-    font-size: 1.9rem;
-    color: var(--secondary-color);
-    font-weight: bold;
-    /* transition: 300ms; */
+    color: var(--font-color);
+    font-family: 'Rubik Mono One', sans-serif;
+    font-size: 2rem;
+    align-self: center;
 }
 
-.studio-service-button:hover {
-    color: white;
-}
-
-.dkwyn {
-    font-size: 1.5rem;
-    font-weight: bolder;
-}
-
-
-.button {
+.studio-price {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    border: 2px solid var(--main-color);
-    text-decoration: none;
-    height: 50px;
-    border-radius: 16px;
-    padding: 10px;
-    transition: 300ms;
-
+    padding: 0rem 1rem;
+    padding-top: 0rem;
+    text-align: center;
+    font-size: 1.4rem;
+    color: rgb(255, 255, 255);
+    font-family: 'Fira Mono', monospace;
+    font-weight: 500;
+    margin-top: 30px;
 }
 
-.button:hover {
-    background-color: var(--secondary-color);
+.studio-price-text {
+    margin: 10px 0px;
+    font-size: 1.5rem;
 }
 
