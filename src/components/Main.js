@@ -4,9 +4,9 @@ import {Route, Switch} from "react-router-dom";
 import Services from "./Services";
 import Social from './Social';
 import StudioServices from "./StudioServices";
-import Pricing from "./Pricing";
 import WorkExamples from "./WorkExamples";
-import ServiceDescription from "./ServiceDescription";
+import AcousticsDescription from "./AcousticsDescription";
+import LiveDescription from "./LiveDescription";
 import StudioExamples from "./StudioExamples";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
@@ -38,13 +38,13 @@ function Main ({location, setLocation, setContactSubject, contactSubject}) {
                 </Route>
 
                 <Route path="/acoustics">
-                    <ServiceDescription />
+                    <AcousticsDescription />
                     <StudioExamples setLocation={setLocation} />
                 </Route>
 
                 <Route path="/live">
                     <LiveLocation setLocation={setLocation} />
-                    <ServiceDescription />
+                    <LiveDescription />
                 </Route>
 
                 <Route path="/about">
