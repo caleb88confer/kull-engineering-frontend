@@ -38,7 +38,7 @@ function Header ({location, setContactSubject}) {
             "location": "live",
             "img": "https://images.unsplash.com/photo-1603815878781-536e057a3e7c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80",
             "title": "Live",
-            "tag": "Hire a live sound engineer or rent live sound equipment.",
+            "tag": "Hire a live sound engineer or rent live sound equipment",
             "contact": true,
             "subject": "Live"
         },

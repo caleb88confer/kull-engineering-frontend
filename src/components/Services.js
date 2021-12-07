@@ -30,7 +30,7 @@ function Services ({setLocation}) {
 
                 </div>
                 <div className="service-description">
-                click me If you need your song or podcast recorded, mixed, and or mastered. 
+                Recording, Mixing, and/or Mastering for songs and Podcast. 
                 </div>
                     </Link>
 
@@ -50,7 +50,7 @@ function Services ({setLocation}) {
                         {/* <img className="service-img" src="https://images.unsplash.com/photo-1617994452722-4145e196248b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80" alt="" /> */}
                 </div>
                 <div className="service-description">
-                click me if you want your own home/commercial studio or theater. 
+                Design your own studio and/or theater, commercial or home. 
                 </div>
 
                     </Link>
@@ -71,7 +71,7 @@ function Services ({setLocation}) {
                 </div>
 
                 <div className="service-description">
-                click me if you want a live sound engineer or want to rent live sound equipment. 
+                Hire a live sound engineer or rent live sound equipment. 
                 </div>
 
                     </Link>
