@@ -17,6 +17,7 @@ function StudioServices ({setLocation, setContactSubject}) {
             <Link 
             className="studio-service-contact-link"
             onClick={()=> setContactSubject('Recording')}
+            to='/contact'
             >
                 <div className="studio-service-left">
                     <h3 className="studio-service-title">Recording</h3>
@@ -57,6 +58,7 @@ function StudioServices ({setLocation, setContactSubject}) {
             <Link 
             className="studio-service-contact-link"
             onClick={()=> setContactSubject('Mixing')}
+            to='/contact'
             >
                 <div className="studio-service-left">
                     <h3 className="studio-service-title">Mixing</h3>
@@ -95,6 +97,7 @@ function StudioServices ({setLocation, setContactSubject}) {
         <Link 
             className="studio-service-contact-link"
             onClick={()=> setContactSubject('Mastering')}
+            to='/contact'
             >
                 <div className="studio-service-left">
                     <h3 className="studio-service-title">Mastering</h3>
