@@ -53,6 +53,7 @@ function Main ({location, setLocation, setContactSubject, contactSubject}) {
 
                 <Route path="/contact">
                     <Contact 
+                    setContactSubject={setContactSubject}
                     contactSubject={contactSubject}
                     setLocation={setLocation}/>
                 </Route>

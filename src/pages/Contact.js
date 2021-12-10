@@ -2,17 +2,23 @@ import {useState, useEffect} from 'react';
 import '../Css/Contact.css';
 
 
-function Contact ({setLocation, contactSubject}) {
-    useEffect(() => {
-        setLocation(5);
-        window.scrollTo(0, 0)
-    })
-
-    const [mailerState, setMailerState] = useState({
-        name: "",
-        email: "",
-        message: "",
-    });
+function Contact ({setLocation, contactSubject, setContactSubject}) {
+  
+  const [mailerState, setMailerState] = useState({
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+  useEffect(() => {
+      setLocation(5);
+      window.scrollTo(0, 0)
+      setMailerState((prevState) => ({
+        ...prevState,
+        subject: contactSubject,
+    }));
+      
+  }, [])
     // sending email info to backend
     const submitEmail = async (e) => {
         e.preventDefault();
@@ -51,6 +57,7 @@ function Contact ({setLocation, contactSubject}) {
             [e.target.name]: e.target.value,
         }));
     }
+  
        return (
             <div className="contact-tab">
                 <form
@@ -76,7 +83,7 @@ function Contact ({setLocation, contactSubject}) {
                             <input 
                                 onChange={handleStateChange}
                                 name="subject"
-                                value={contactSubject}
+                                value={mailerState.subject}
                             /> 
                             <textarea
                                 onChange={handleStateChange}
