@@ -60,4 +60,35 @@ iframe {
 
 }
 
+@media only screen and (max-width: 700px) {
+
+    .spotify-tab {
+        display: flex;
+        flex-direction: column;
+
+        width: 99%;
+  
+    
+    }
+
+    .youtube-tab {
+        display: flex;
+        flex-direction: column;
+        height: 50%;
+        width: 99%;
+        padding: 50px 0;
+    }
+
+    .info-tab {
+        width: 100%;
+        
+    }
+
+    .embedded-tab {
+        width: 100%;
+    }
+
+
+ }
+
 

@@ -10,7 +10,7 @@ import './App.css';
 
 function App() {
   const [location, setLocation] = useState(0)
-  const [contactSubject, setContactSubject] = useState('Not sure yet')
+  const [contactSubject, setContactSubject] = useState('')
 
   return (
     <div className="App">
