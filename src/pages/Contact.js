@@ -23,7 +23,7 @@ function Contact ({setLocation, contactSubject, setContactSubject}) {
     const submitEmail = async (e) => {
         e.preventDefault();
         console.log({ mailerState });
-        const response = await fetch("https://kull-backend-test.herokuapp.com/send", {
+        const response = await fetch("http://localhost:4000/send", {
           method: "POST",
           headers: {
             "Content-type": "application/json",
