@@ -4,65 +4,50 @@ import '../Css/Contact.css';
 
 function Contact ({setLocation, contactSubject, setContactSubject}) {
   
-  const [mailerState, setMailerState] = useState({
-    name: "",
+  const [form, setForm] = useState({
     email: "",
     subject: "",
     message: "",
   });
+
+  const encode = (data) => {
+    return Object.keys(data)
+        .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+        .join("&");
+  }
+
   useEffect(() => {
       setLocation(5);
       window.scrollTo(0, 0)
-      setMailerState((prevState) => ({
+      setForm((prevState) => ({
         ...prevState,
         subject: contactSubject,
     }));
       
   }, [])
-    // sending email info to backend
-    const submitEmail = async (e) => {
-        e.preventDefault();
-        console.log({ mailerState });
-        const response = await fetch("http://localhost:4000/send", {
-          method: "POST",
-          headers: {
-            "Content-type": "application/json",
-          },
-          body: JSON.stringify({ mailerState }),
-        })
-          .then((res) => res.json())
-          .then(async (res) => {
-            const resData = await res;
-            console.log(resData);
-            if (resData.status === "success") {
-              alert("Message Sent");
-            } else if (resData.status === "fail") {
-              alert("Message failed to send");
-            }
-          })
-          .then(() => {
-            setMailerState({
-              email: "",
-              subject: "",
-              name: "",
-              message: "",
-            });
-          });
-      };
 
-    // handle contact form changing mailer state 
-    function handleStateChange(e) {
-        setMailerState((prevState) => ({
-            ...prevState,
-            [e.target.name]: e.target.value,
-        }));
-    }
+  const handleSubmit = (e) => {
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...form })
+    })
+      .then(() => alert("Success!"))
+      .catch(error => alert(error));
+
+    e.preventDefault();
+  };
+
+
+  const handleChange = (event) => {
+    setForm({ ...form, [event.target.name]: event.target.value });
+  };
   
        return (
             <div className="contact-tab">
                 <form
                 className='contact-form'
-                    onSubmit={submitEmail}
+                    onSubmit={handleSubmit}
                 >
                     
                         {/* <legend>React NodeMailer Contact Form</legend> */}
@@ -76,19 +61,19 @@ function Contact ({setLocation, contactSubject, setContactSubject}) {
                         </div>
                         <div className='form-right'>
                             <input 
-                                onChange={handleStateChange}
+                                onChange={handleChange}
                                 name="email"
-                                value={mailerState.email}
+                                value={form.email}
                             />
                             <input 
-                                onChange={handleStateChange}
+                                onChange={handleChange}
                                 name="subject"
-                                value={mailerState.subject}
+                                value={form.subject}
                             /> 
                             <textarea
-                                onChange={handleStateChange}
+                                onChange={handleChange}
                                 name="message"
-                                value={mailerState.message}
+                                value={form.message}
                             />
                             <button>Send Message</button>
 

@@ -266,7 +266,7 @@ function Nav ({location}) {
     <div className="link">
         <Link
         className={`nav-link ${selectedLink.contact} ${smallScreenLinks}`} 
-        to='/contact2'>
+        to='/contact'>
             <p>
             Contact
 

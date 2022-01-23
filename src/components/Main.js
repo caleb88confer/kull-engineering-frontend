@@ -10,7 +10,6 @@ import LiveDescription from "./LiveDescription";
 import StudioExamples from "./StudioExamples";
 import About from "../pages/About";
 import Contact from "../pages/Contact";
-import Contact2 from "../pages/Contact2";
 import LiveLocation from "./LiveLocation";
 
 function Main ({location, setLocation, setContactSubject, contactSubject}) {
@@ -54,12 +53,6 @@ function Main ({location, setLocation, setContactSubject, contactSubject}) {
 
                 <Route path="/contact">
                     <Contact 
-                    setContactSubject={setContactSubject}
-                    contactSubject={contactSubject}
-                    setLocation={setLocation}/>
-                </Route>
-                <Route path="/contact2">
-                    <Contact2 
                     setContactSubject={setContactSubject}
                     contactSubject={contactSubject}
                     setLocation={setLocation}/>
