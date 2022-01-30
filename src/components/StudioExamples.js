@@ -7,8 +7,10 @@ function StudioExamples ({setLocation}) {
         window.scrollTo(0, 0)
     })
 
-    return(
-        <h1>StudioExamples tab</h1>
+    return(<div>
+        {/* <h1>StudioExamples tab</h1> */}
+
+    </div>
     );
 }
 

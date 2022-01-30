@@ -10,6 +10,7 @@
     /* border: 1px solid red; */
     height: 400px;
     margin-top: 2rem;
+    margin-bottom: 10rem;
 }
 
 .acoustics-description-title {
@@ -20,11 +21,12 @@
 }
 
 .acoustics-description-text {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: whitesmoke;
     font-family: 'Fira Mono', monospace;
+    font-family: 'Rubik', sans-serif;
     /* border: 1px solid lime; */
-    padding: 3rem;
+    padding: 1rem;
     margin: 3rem;
     margin-top: 0rem;
 }

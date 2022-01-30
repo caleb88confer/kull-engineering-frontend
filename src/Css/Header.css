@@ -18,26 +18,33 @@
 z-index: 10;
 
 }
+.title-tag-container {
+    position: absolute;
+    top: 0rem;
+    /* border: 1px solid lime; */
+    width: 100%;
+    height: 400px;
+
+}
 
 .header-title-generic {
-    top: 3rem;
-    left: 1rem;
-    position: absolute;
+    margin-bottom: 0;
     font-size: 5rem;
     font-weight: 900;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, -1px -1px 0 #000000, 1px 0px 0 #000000, 0px 1px 0 #000000, -1px 0px 0 #000000, 0px -1px 0 #000000;
-    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Rubik Mono One', sans-serif;
+
+    
 }
 
 .header-tag-generic {
-    top: 11rem;
-    left: 2rem;
-    position: absolute;
     font-size: 3rem;
     font-weight: 900;
     color: rgb(255, 255, 255);
     text-shadow: 1px 1px 0 #000000, 1px -1px 0 #000000, -1px 1px 0 #000000, -1px -1px 0 #000000, 1px 0px 0 #000000, 0px 1px 0 #000000, -1px 0px 0 #000000, 0px -1px 0 #000000;
+    font-family: 'Rubik Mono One', sans-serif;
+
 }
 
 .header-img {
@@ -74,18 +81,22 @@ z-index: 10;
     /* ============================== home header ============================================= */
 
 .home-title {
-    top: 0rem;
-    left: 1rem;
-    color: black;
-    text-shadow: 1px 1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px 0px 0 #ffffff, 0px 1px 0 #ffffff, -1px 0px 0 #ffffff, 0px -1px 0 #ffffff;
+    margin-top: 2rem;
+    text-align: center;
+    font-size: 3.8rem;
+    /* border: 1px solid lime; */
+    color: white;
+    text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
 }
 
 .home-tag {
-    top: 8rem;
-    left: 5rem;
-    color: black;
-    font-family: 'Josefin Sans', sans-serif;
-    text-shadow: 1px 1px 0 #ffffff, 1px -1px 0 #ffffff, -1px 1px 0 #ffffff, -1px -1px 0 #ffffff, 1px 0px 0 #ffffff, 0px 1px 0 #ffffff, -1px 0px 0 #ffffff, 0px -1px 0 #ffffff;
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    /* border: 1px solid lime; */
+    font-size: 2rem;
+    color: white;
+    text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
 }
 
 .home-header-img {
@@ -99,15 +110,14 @@ z-index: 10;
 
 
 .studio-title {
-    top: 0rem;
-    left: 3rem;
+    margin-left: 20px;
+    margin-bottom: 0px;
     text-shadow: none;
 }
 
 .studio-tag {
-    top: 10rem;
-    left: 3rem;
-    width: 65%;
+    width: 80%;
+    margin-bottom: 500px;
     color: white;
     font-size: 1.4rem;
     line-height: 1.5;
@@ -127,14 +137,11 @@ z-index: 10;
 
 
 .acoustics-title {
-    top: 0rem;
-    left: 3rem;
+    margin-left: 20px;
     text-shadow: none;
 }
 
 .acoustics-tag {
-    top: 10rem;
-    left: 2rem;
     width: 75%;
     color: white;
     font-size: 1.4rem;
@@ -152,14 +159,11 @@ z-index: 10;
     /* ============================== live header ============================================= */
 
     .live-title {
-        top: 0rem;
-        left: 3rem;
+    margin-left: 20px;
         text-shadow: none;
     }
     
     .live-tag {
-        top: 10rem;
-        left: 2rem;
         width: 65%;
         color: white;
         font-size: 1.4rem;
@@ -177,6 +181,17 @@ z-index: 10;
 
     /* ========================= about page =================================== */
 
+    .about-title {
+        /* border: 1px solid red; */
+        align-self: center;
+        width: 90%;
+}
+.about-tag {
+    width: 90%;
+    text-align: center;
+
+    }
+
 
     .about-header-img {
     box-shadow: 0px 10px 38px 8px #efd5a6ae;
@@ -185,6 +200,16 @@ z-index: 10;
 
     /* ========================= contact page =================================== */
 
+    .contact-title {
+        text-align: center;
+        text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
+    }
+    .contact-tag {
+        width: 90%;
+        text-align: center;
+        /* border: 1px solid red; */
+    }
+    
     .contact-header-img {
     box-shadow: 0px 10px 38px 8px #efd5a6ae;
         
@@ -198,19 +223,33 @@ z-index: 10;
 
     .header-tab {
         height: 475px;
-        /* border: 1px solid red; */
+    }
+
+    .title-tag-container {
+        width: 100%;
+        height: 475px;
+        display: flex;
+        flex-direction: column;
+    
     }
 
     .header-title-generic {
-        font-size: 4.6rem;
+        font-size: 4rem;
         text-align: center;
+        margin-bottom: 50px;
         
       
     }
     
     .header-tag-generic {
+        position: relative;
         font-size: 1rem;
         text-align: center;
+        width: 88%;
+        height: 80px;
+        margin: 0 auto;
+        padding: 20px;
+        align-self: center;
     }
 
     .header-img {
@@ -218,29 +257,23 @@ z-index: 10;
         }
 
     .home-title {
-        top: -1rem;
-        left: 0rem;
-        width: 100%;
+      font-size: 3.0rem;
     }
 
     .home-tag {
-        top: 12rem;
-        left: 0rem;
-        font-size: 2.7rem;
-        width: 100%;
+        font-size: 1.6rem;
     }
 
     .studio-title {
-        top: 0rem;
-        left: 3rem;
+        text-align: center;
+        margin-left: 0px;
         text-shadow: none;
     }
     
     .studio-tag {
-        top: 10rem;
-        left: 3rem;
-        width: 65%;
-        font-size: 1.1rem;
+        text-align: center;
+        margin: 0px;
+    
         
     }
     
@@ -251,26 +284,38 @@ z-index: 10;
     }
 
     .acoustics-title {
-        top: -1rem;
+        font-size: 3.8rem;
+        text-align: center;
+        margin-left: 0px;
+        margin-bottom: 50px;
+        text-shadow: none;
     }
     
     .acoustics-tag {
-        top: 9rem;
-        left: 2rem;
-        width: 85%;
+        text-align: center;
+        margin: 0px;
+        font-size: 1rem;
     }
 
     .live-tag {
-        top: 10rem;
-        left: 2rem;
-        width: 75%;
         color: white;
-        font-size: 1.2rem;
         line-height: 1.5;
         padding: 10px;
         text-shadow: none;
-        border-radius: 5px;
-        background-color: #12121280;
+    }
+
+    .about-title {
+        font-size: 2.8rem;
+        align-self: center;
+        width: 90%;
+}
+
+    .contact-title {
+        font-size: 3.8rem;
+        text-align: center;
+        margin-left: 0px;
+        margin-bottom: 50px;
+        text-shadow: 2px 2px 0 #000000, 2px -2px 0 #000000, -2px 2px 0 #000000, -2px -2px 0 #000000, 2px 0px 0 #000000, 0px 2px 0 #000000, -2px 0px 0 #000000, 0px -2px 0 #000000;
     }
 
     .contact-button {
@@ -286,7 +331,7 @@ z-index: 10;
 @media only screen and (max-width: 480px) {
 
     .header-title-generic {
-        font-size: 4.9rem;
+        font-size: 3rem;
       
     }
     
@@ -295,19 +340,25 @@ z-index: 10;
     }
 
     .home-title {
-        top: -2rem;
-        left: 0rem;
-        font-size: 3.4rem;
+        font-size: 2.6rem;
         width: 100%;
         text-align: center;
     }
 
     .home-tag {
-        top: 9rem;
-        left: 0rem;
-        font-size: 2.7rem;
-        width: 100%;
+        font-size: 2rem;
+        width: 95%;
     }
+
+    .acoustics-title {
+        font-size: 2.8rem;
+
+    }
+    .about-title {
+        font-size: 2rem;
+        align-self: center;
+        width: 90%;
+}
 
 }
 
@@ -315,28 +366,16 @@ z-index: 10;
 
 @media only screen and (max-width: 400px) {
 
-    .header-title-generic {
-        font-size: 4.9rem;
-      
-    }
-    
-    .header-tag-generic {
-        font-size: 1rem;
-    }
 
     .home-title {
-        top: -1rem;
-        left: 0rem;
-        font-size: 3.2rem;
+        font-size: 2.6rem;
         width: 100%;
         text-align: center;
     }
 
     .home-tag {
-        top: 8rem;
-        left: 0rem;
-        font-size: 2.5rem;
-        width: 100%;
+        font-size: 2rem;
+        width: 95%;
     }
     
 }

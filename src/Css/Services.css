@@ -17,7 +17,7 @@
 
 .service {
     position: relative;
-    width: 200px;
+    width: 240px;
     margin: 0 2rem;
     margin-top: 3rem;
     /* z-index: 7; */
@@ -36,6 +36,8 @@ h3 {
     color: var(--font-color);
     font-family: 'Rubik Mono One', sans-serif;
     font-size: 2rem;
+    /* border: 1px solid lime; */
+    text-align: center;
 
 }
 
@@ -110,9 +112,12 @@ h3 {
     padding: 2rem 1rem;
     padding-top: 0rem;
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     color: whitesmoke;
-    font-family: 'Fira Mono', monospace;
+    /* font-family: 'Fira Mono', monospace;
+    font-family: 'Rubik Mono One', sans-serif; */
+    font-family: 'Rubik', sans-serif;
+
     
     
 

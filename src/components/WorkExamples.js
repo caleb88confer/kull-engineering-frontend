@@ -9,7 +9,7 @@ function WorkExamples (props) {
                 <div className="info-tab">
                     <h2 className='info-title'>Spotify</h2>
                     <p className="info-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officiis quibusdam? Nesciunt aliquam quasi.
+                        Debut single of Philadelphia band Mars Counsel. Produced, mixed, and mastered by James Kull
                     </p>
                 </div>
 
@@ -25,7 +25,7 @@ function WorkExamples (props) {
             <div className="info-tab">
                     <h2 className='info-title'>Youtube</h2>
                     <p className="info-description">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, officiis quibusdam? Nesciunt aliquam quasi.
+                        James Kull brings his percussive guitar style to the studio, and covers Drifting by Andy McKee
                     </p>
                 </div>
 

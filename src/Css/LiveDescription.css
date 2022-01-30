@@ -12,6 +12,7 @@
     /* border: 1px solid red; */
     height: 400px;
     margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 
 .live-description-title {
@@ -20,14 +21,30 @@
     font-size: 1.7rem;
     margin-top: 6rem;
     width: 60%;
+    /* border: 1px solid red; */
 }
 
 .live-description-text {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     color: whitesmoke;
-    font-family: 'Fira Mono', monospace;
-    /* border: 1px solid lime; */
-    padding: 3rem;
+    /* font-family: 'Fira Mono', monospace; */
+    font-family: 'Rubik', sans-serif;
+    padding: 2rem;
     margin: 3rem;
     margin-top: 0rem;
+}
+
+@media only screen and (max-width: 800px) {
+
+    .live-description-title {
+        font-size: 1.3rem;
+        width: 85%;
+        
+    }
+
+    .live-description-text {
+        font-size: 1.4rem;
+        width: 90%;
+    }
+
 }
